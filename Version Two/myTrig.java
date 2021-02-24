@@ -26,13 +26,13 @@ public class myTrig {
         //This line of code is extremely important as it takes each value and scales it to a value between 0 and 2PI.
         //This is important in computing the sin value for large values that are greater than the range of a double
         //variable
-        x = x % (2 * Math.PI); // setting x to be less than 2PI
+        x = x % (2 * PI); // setting x to be less than 2PI
         return TaylorSeries(x,0,0,1,1);
     }
 
     //This function outputs the cos value of a given radians value
     public double Cos(double x){
-        x = x % (2 * Math.PI); // setting x to be less than 2PI
+        x = x % (2 * PI); // setting x to be less than 2PI
         return TaylorSeries(x,1, 1 , 2 , -1);
     }
 
